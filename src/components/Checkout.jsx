@@ -1,10 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/components/Checkout.css';
 
 const Checkout = () => {
   return (
-    <>
-      <h1>Checkout</h1>
-    </>
+    <div className="Checkout">
+      <div className="Checkout-content">
+        <h3>Lista de pedidos:</h3>
+        <div className="Checkout-item">
+          <div className="Checkout-element">
+            <h4>ITEM NAME</h4>
+            <span>$2000000</span>
+          </div>
+          <button type="button">
+            <i className="fas fa-trash-alt" />
+          </button>
+        </div>
+      </div>
+      <div className="Checkout-sidebar">
+        <h3>Precio Total: $20000000</h3>
+        <Link to="/checkout/information">
+          <button type="button">Continuar pedido</button>
+        </Link>
+      </div>
+    </div>
   );
 };
 
