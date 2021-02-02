@@ -6,7 +6,8 @@ const Footer = () => {
     <div className="Footer">
       <p className="Footer-title">Merch Store</p>
       <p className="Footer-copy">
-        Hecho con amor por <a href="https://github.com/ItsDavidHdez">David.</a>
+        Hecho con &#10084;&#65039; por{' '}
+        <a href="https://github.com/ItsDavidHdez">David.</a>
       </p>
       <p className="Footer-copy">Todos los izquierdos reservados.</p>
     </div>
